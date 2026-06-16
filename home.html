@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-right: 5px dashed #8c8cf3;
+            border-left: 5px dotted rgb(196, 210, 46);
+            background-color: #f3c;
+
+        }
+        .before{
+            box-sizing: border-box;
+        }
+        .after div{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Before</h2>
+    <div class="before">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+    </div>
+    <hr>
+    <h2>After</h2>
+    <div class="after">
+        <div>Box4</div>
+        <div>Box5</div>
+        <div>Box6</div>
+    </div>
+</body>
+</html>
