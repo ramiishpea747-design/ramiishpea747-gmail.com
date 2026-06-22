@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Gallery</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+    background:#ff6b35;
+    color:white;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h1{
+    font-size:22px;
+    padding:10px;
+}
+
+.card p{
+    padding:0 10px 15px;
+    color:#555;
+}
+
+@media(max-width:768px){
+    .card{
+        width:90%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Responsive Food Gallery</h1>
+    <p>Chapter 9 Flexbox Assignment</p>
+</header>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="bitza.jpg" alt="Pitzaa">
+        <h1>Pizza</h1>
+        <p>Delicious Italian Pizza.</p>
+    </div>
+
+    <div class="card">
+        <img src="bergar.jpg" alt="Burger">
+        <h1>Burger</h1>
+        <p>Tasty Beef Burger.</p>
+    </div>
+
+    <div class="card">
+        <img src="pasta.jpg" alt="Pasta">
+        <h1>Pasta</h1>
+        <p>Fresh and creamy pasta.</p>
+    </div>
+
+    <div class="card">
+        <img src="shaax.jpg" alt="Tea">
+        <h1>Somali Tea</h1>
+        <p>Traditional Somali tea.</p>
+    </div>
+
+    <div class="card">
+        <img src="pinck.jpg" alt="Cake">
+        <h1>Cake</h1>
+        <p>Sweet chocolate cake.</p>
+    </div>
+
+    <div class="card">
+        <img src="mango.jpg" alt="Juice">
+        <h1>Juice</h1>
+        <p>Fresh fruit juice.</p>
+    </div>
+
+    <div class="card">
+        <img src="shuwaarme.jpg" alt="Shawarma">
+        <h1>Shawarma</h1>
+        <p>Hot and delicious shawarma.</p>
+    </div>
+
+    <div class="card">
+        <img src="ice creem.jpg" alt="Ice Cream">
+        <h1>Ice Cream</h1>
+        <p>Cold and tasty dessert.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
